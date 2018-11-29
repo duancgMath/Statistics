@@ -17,6 +17,9 @@ classify.distance <- function(TrainX, Trainy, TestX=NULL, var.equal=FALSE){
     } else if (!is.matrix(TestX)) {
         TestX = as.matrix(TestX)
     }
+    if (!is.factor(Trainy)) {
+        Trainy = as.factor(Trainy)
+    }
     
     # Size of datas
     test.n = nrow(TestX)
