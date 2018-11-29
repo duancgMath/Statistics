@@ -7,7 +7,6 @@
 # import data
 X <- iris[,1:4]
 actual.label <- gl(3,50)
-#actual.label <- as.numeric(actual.label)
 
 # Classification
 source("classifyDistance.R")
