@@ -10,7 +10,7 @@ Province.data <- as.matrix(Province.data0[,2:9])
 rownames(Province.data) <- Province.data0[,1]
 Province.data.sd <- scale(Province.data)
 
-# calulate distances
+# calculate distances
 province.dist <- dist(Province.data.sd, diag=T)
 
 # Hierarchical Clustering based on distances
