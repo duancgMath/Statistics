@@ -6,6 +6,7 @@
 
 # data reading and preprocessing
 Province.data0 <- read.csv("1999city.csv")
+# Province.data0 <- read.csv("2015city.csv")
 Province.data <- as.matrix(Province.data0[,2:9])
 rownames(Province.data) <- Province.data0[,1]
 Province.data.sd <- scale(Province.data)
